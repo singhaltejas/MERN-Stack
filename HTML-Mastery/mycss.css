@@ -1,0 +1,10 @@
+h1{
+    color: red;
+    border: 10px solid black;
+    border-style: dashed;
+    border-color: red;
+    padding: 20px;
+    margin: 40px;
+    letter-spacing: 20px;
+    
+}
