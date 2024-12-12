@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing with Forms</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+    }
+</style>
+<body>
+    <div class="container">
+        <form class = "myform" action = "" onsubmit = "funsubmit()">
+            Your Email : <input type = "email" id = "input" onfocus = "onfun()" onblur="offfun()" onselect = "selectfun()" required>
+            <input type="submit">
+        </form>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
