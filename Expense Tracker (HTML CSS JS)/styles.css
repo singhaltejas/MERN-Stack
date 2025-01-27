@@ -1,0 +1,51 @@
+#container {
+  background-color: whitesmoke;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+#description,
+#amount {
+  width: 200px;
+  height: 20px;
+}
+
+#type {
+  width: 210px;
+  height: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+th {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#button-submit{
+    font-weight: bold;
+    color : white;
+    background-color: green;
+}

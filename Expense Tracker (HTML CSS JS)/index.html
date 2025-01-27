@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel = "stylesheet" href = "styles.css" />
+  </head>
+  <body>
+    <div id="container">
+
+      <h1>Expense Tracker</h1>  
+      <form onsubmit="submitForm()" id = "expense-form">
+        <input
+          type="text"
+          id="description"
+          name="expense-description"
+          placeholder="Expense Description"
+          required
+        /><br />
+        <select name="expense-type" id="type" required>
+          <option value="" disabled selected>Select your option</option>
+          <option value="Housing">Housing</option>
+        <option value="Utilities">Utilities</option>
+        <option value="Transportation">Transportation</option>
+        <option value="Food">Food</option>
+        <option value="Health-Wellness">Health and Wellness</option>
+        <option value="Education">Education</option>
+        <option value="Entertainment-Leisure">Entertainment and Leisure</option>
+        <option value="Debt-Payments">Debt Payments</option>
+        <option value="Savings-Investments">Savings and Investments</option>
+        <option value="Miscellaneous">Miscellaneous</option>
+
+        ><br />
+        <input
+          type="number"
+          id="amount"
+          name="expense-amount"
+          placeholder="Amount"
+          required
+        /><br />
+        <input id = "button-submit" type="submit" value="Add Expense" />
+      </form>
+
+      <h2>Expense Summary</h2>
+      <table id = "expense-table">
+        <tr>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
+
+<script src="script.js"></script>
