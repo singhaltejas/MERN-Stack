@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Sign App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id = "h1heading">Quick Sign App</h1>
+      <div class="top">
+        <div class="color-picker">
+          <p>Text Color Picker</p>
+          <input type="color" id="text-color" />
+        </div>
+        <div class="color-picker">
+          <p>Background Color Picker</p>
+          <input type="color" id="bg-color" />
+        </div>
+        <div class="font-size">
+          <p>Font Size</p>
+          <input type="number" id="font-size" />
+        </div>
+      </div>
+
+      <canvas
+        class="canvas"
+        id="myCanvas"
+        width="800px"
+        height="500px"
+      ></canvas>
+
+      <div class="bottom">
+        <button id="clear" title="Clear the Canvas">Clear</button>
+        <button id="save" title="Save canvas sign to png">
+          Save & Download
+        </button>
+        <button id="retrieve" title="Retrieve last saved sign">
+          Retrieve Saved Sign
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="script.js"></script>
